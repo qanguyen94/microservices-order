@@ -1,0 +1,7 @@
+camunda.bpm.client:
+  base-url: http://localhost:9090/engine-rest # the URL pointing to the Camunda Platform Runtime REST API
+  lock-duration: 5000 # defines how many milliseconds the External Tasks are locked until they can be fetched again
+  subscriptions:
+    ProcessOrder: # topic name of the External Service Task
+      variable-names: []
+      process-definition-key: OrderProcess

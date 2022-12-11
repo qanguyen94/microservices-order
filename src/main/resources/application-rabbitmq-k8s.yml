@@ -1,0 +1,9 @@
+services:
+  payment:
+    url: ${PAYMENT_SERVICE_URL}
+spring:
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: guest # default username of rabbitmq
+    password: guest # default username of rabbitmq
